@@ -1,0 +1,100 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
+
+/* Fiksert Logo */
+.fixed-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: auto;
+  z-index: 1000;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 1em 0;
+}
+
+/* Parallax Seksjoner */
+.parallax {
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.IC {
+  background-image: url('./Img/IC.jpg');
+}
+
+.IC2 {
+  background-image: url('./Img/IC2.jpg');
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Content Seksjoner */
+.content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 1em 0;
+}
+
+/* Responsiv Design */
+@media screen and (max-width: 768px) {
+  /* Logo */
+  .fixed-logo {
+    width: 60px;
+  }
+
+  /* Tekstjustering */
+  h1, h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  /* Parallax Seksjon */
+  .parallax {
+    height: 250px;
+  }
+}
